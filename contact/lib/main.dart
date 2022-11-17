@@ -48,7 +48,7 @@ class Route1 extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  padding: EdgeInsets.only(left:10),
+                  padding: EdgeInsets.only(left: 10),
                   child: Image.asset('assets/asmlogore.png', width: 75,),
                 ),
               ],
@@ -61,7 +61,7 @@ class Route1 extends StatelessWidget {
               borderRadius: BorderRadius.circular(22),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
+                  color: Colors.grey.withOpacity(0.75),
                   spreadRadius: 2,
                   blurRadius: 7,
                   offset: Offset(0, 3), // changes position of shadow
@@ -128,26 +128,19 @@ class Route1 extends StatelessWidget {
             ),
             IconButton(
               icon: Icon(Icons.food_bank_rounded),
-              onPressed: () {
-                Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Route2()),
-              );
-                },
+              onPressed: () {},
             ),
             IconButton(
               icon: Icon(Icons.money_rounded),
-              onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => Route3()),
-              );},
+              onPressed: () {},
             ),
             IconButton(
               icon: Icon(Icons.school_rounded),
-              onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => Route4()),
-              );},
+              onPressed: () {},
             ),
             IconButton(
               icon: Icon(Icons.tag_faces_rounded),
-              onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => Route5()),
-              );},
+              onPressed: () {},
             ),
           ],
         )
@@ -155,239 +148,6 @@ class Route1 extends StatelessWidget {
     );
   }
 }
-
-class Route2 extends StatelessWidget {
-  const Route2({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color(0xfff8f8f9),
-        shadowColor: Colors.transparent,
-      ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context, MaterialPageRoute(builder: (context) => Route1()),
-            );
-          },
-          child: Text('급식'),
-        ),
-      ),
-      backgroundColor: Color(0xfff8f8f9),
-      bottomNavigationBar: BottomAppBar(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              IconButton(
-                icon: Icon(Icons.home_rounded),
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => Route1()),
-                  );
-                },
-              ),
-              IconButton(
-                icon: Icon(Icons.food_bank_rounded),
-                onPressed: () {},
-              ),
-              IconButton(
-                icon: Icon(Icons.money_rounded),
-                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => Route3()),
-                );},
-              ),
-              IconButton(
-                icon: Icon(Icons.school_rounded),
-                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => Route4()),
-                );},
-              ),
-              IconButton(
-                icon: Icon(Icons.tag_faces_rounded),
-                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => Route5()),
-                );},
-              ),
-            ],
-          )
-      ),
-    );
-  }
-}
-
-class Route3 extends StatelessWidget {
-  const Route3({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color(0xfff8f8f9),
-        shadowColor: Colors.transparent,
-      ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Text('포인트'),
-        ),
-      ),
-      backgroundColor: Color(0xfff8f8f9),
-      bottomNavigationBar: BottomAppBar(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              IconButton(
-                icon: Icon(Icons.home_rounded),
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => Route1()),
-                  );
-                },
-              ),
-              IconButton(
-                icon: Icon(Icons.food_bank_rounded),
-                onPressed: () {Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Route2()),
-                );},
-              ),
-              IconButton(
-                icon: Icon(Icons.money_rounded),
-                onPressed: () {},
-              ),
-              IconButton(
-                icon: Icon(Icons.school_rounded),
-                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => Route4()),
-                );},
-              ),
-              IconButton(
-                icon: Icon(Icons.tag_faces_rounded),
-                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => Route5()),
-                );},
-              ),
-            ],
-          )
-      ),
-    );
-  }
-}
-
-class Route4 extends StatelessWidget {
-  const Route4({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color(0xfff8f8f9),
-        shadowColor: Colors.transparent,
-      ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Text('시간표'),
-        ),
-      ),
-      backgroundColor: Color(0xfff8f8f9),
-      bottomNavigationBar: BottomAppBar(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              IconButton(
-                icon: Icon(Icons.home_rounded),
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => Route1()),
-                  );
-                },
-              ),
-              IconButton(
-                icon: Icon(Icons.food_bank_rounded),
-                onPressed: () {Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Route2()),
-                );},
-              ),
-              IconButton(
-                icon: Icon(Icons.money_rounded),
-                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => Route3()),
-                );},
-              ),
-              IconButton(
-                icon: Icon(Icons.school_rounded),
-                onPressed: () {},
-              ),
-              IconButton(
-                icon: Icon(Icons.tag_faces_rounded),
-                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => Route5()),
-                );},
-              ),
-            ],
-          )
-      ),
-    );
-  }
-}
-
-class Route5 extends StatelessWidget {
-  const Route5({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color(0xfff8f8f9),
-        shadowColor: Colors.transparent,
-      ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Text('프로필'),
-        ),
-      ),
-      backgroundColor: Color(0xfff8f8f9),
-      bottomNavigationBar: BottomAppBar(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              IconButton(
-                icon: Icon(Icons.home_rounded),
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => Route1()),
-                  );
-                },
-              ),
-              IconButton(
-                icon: Icon(Icons.food_bank_rounded),
-                onPressed: () {Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Route2()),
-                );},
-              ),
-              IconButton(
-                icon: Icon(Icons.money_rounded),
-                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => Route3()),
-                );},
-              ),
-              IconButton(
-                icon: Icon(Icons.school_rounded),
-                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => Route4()),
-                );},
-              ),
-              IconButton(
-                icon: Icon(Icons.tag_faces_rounded),
-                onPressed: () {},
-              ),
-            ],
-          )
-      ),
-    );
-  }
-}
-
-
 
 
 /*ElevatedButton(
