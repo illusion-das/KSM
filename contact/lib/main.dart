@@ -62,7 +62,7 @@ class Route1 extends StatelessWidget {
               boxShadow: [
                 BoxShadow(
                   color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
+                  spreadRadius: 2,
                   blurRadius: 7,
                   offset: Offset(0, 3), // changes position of shadow
                 ),
@@ -72,21 +72,46 @@ class Route1 extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  width: 100,
-                  height: 100,
+                  width: 180,
+                  height: 120,
                   margin: EdgeInsets.fromLTRB(15, 0, 15, 15),
                   decoration: BoxDecoration(
-                    color: Color(0xff0d6eb8),
+                    color: Color(0xffffffff),
                     borderRadius: BorderRadius.circular(22),
                     boxShadow: [
                       BoxShadow(
                         color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 5,
+                        spreadRadius: 2,
                         blurRadius: 7,
                         offset: Offset(0, 3), // changes position of shadow
                       ),
                     ],
                   ),
+                ),
+                Container(
+                  width: 180,
+                  height: 120,
+                  margin: EdgeInsets.fromLTRB(5, 0, 15, 15),
+                  decoration: BoxDecoration(
+                    color: Color(0xffffffff),
+                    borderRadius: BorderRadius.circular(22),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 2,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Container(
+                  margin: EdgeInsets.fromLTRB(15, 0, 15, 15),
+                    child: Text('유용한 기능')
                 ),
               ],
             )
