@@ -45,6 +45,9 @@ class Route1 extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
+            Row(
+              children: [Image.asset('assets/asmlogore.png', width: 75,)],
+            ),
           Container(
           height: 160,
           margin: EdgeInsets.fromLTRB(15, 60, 15, 15),
