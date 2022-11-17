@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: AnimatedSplashScreen(
-        splash: Image.asset('assets/asmlogore.png', width: 1000,),
+        splash: Image.asset('assets/asmlogore.png'),
         splashIconSize: 300,
         nextScreen: Route1(),
         splashTransition: SplashTransition.fadeTransition,
@@ -38,29 +38,40 @@ class Route1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          toolbarHeight: 67,
+          toolbarHeight: 0,
           backgroundColor: Color(0xffffffff),
           shadowColor: Colors.transparent,
-          title: Image.asset("assets/asmlogoore.png", width: 60,)
       ),
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        color: Color(0xffffffff),
-        child: Center(
-          child: Container(
-            height: 160,
-            margin: EdgeInsets.fromLTRB(15, 0, 15, 555),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.only(
-                topRight: Radius.circular(20,),
-                topLeft: Radius.circular(20,),
-                bottomLeft: Radius.circular(20,),
-                bottomRight: Radius.circular(20,),
-              ),
-              color: Color(0xff0d6eb8),
+      body: Center(
+        child: Column(
+          children: [
+          Container(
+          height: 160,
+          margin: EdgeInsets.fromLTRB(15, 60, 15, 15),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.only(
+              topRight: Radius.circular(20,),
+              topLeft: Radius.circular(20,),
+              bottomLeft: Radius.circular(20,),
+              bottomRight: Radius.circular(20,),
             ),
+            color: Color(0xff0d6eb8),
           ),
+          ),
+            Container(
+              height: 160,
+              margin: EdgeInsets.fromLTRB(15, 0, 15, 1),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(20,),
+                  topLeft: Radius.circular(20,),
+                  bottomLeft: Radius.circular(20,),
+                  bottomRight: Radius.circular(20,),
+                ),
+                color: Color(0xff0d6eb8),
+              ),
+            ),
+          ],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
@@ -350,6 +361,28 @@ color: Colors.white,
 borderRadius: BorderRadius.only(
 topRight: Radius.circular(20,),
 topLeft: Radius.circular(20,),
+),
+),
+),*/
+
+
+/*Container(
+width: double.infinity,
+height: double.infinity,
+color: Color(0xffffffff),
+child: Center(
+child: Container(
+height: 160,
+margin: EdgeInsets.fromLTRB(15, 0, 15, 555),
+decoration: BoxDecoration(
+borderRadius: BorderRadius.only(
+topRight: Radius.circular(20,),
+topLeft: Radius.circular(20,),
+bottomLeft: Radius.circular(20,),
+bottomRight: Radius.circular(20,),
+),
+color: Color(0xff0d6eb8),
+),
 ),
 ),
 ),*/
