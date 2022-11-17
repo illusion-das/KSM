@@ -54,31 +54,42 @@ class Route1 extends StatelessWidget {
               ],
             ),
           Container(
-          height: 160,
+          height: 140,
           margin: EdgeInsets.fromLTRB(15, 0, 15, 15),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.only(
-              topRight: Radius.circular(20,),
-              topLeft: Radius.circular(20,),
-              bottomLeft: Radius.circular(20,),
-              bottomRight: Radius.circular(20,),
-            ),
-            color: Color(0xff0d6eb8),
-          ),
-          ),
-            Container(
-              height: 160,
-              margin: EdgeInsets.fromLTRB(15, 0, 15, 1),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(20,),
-                  topLeft: Radius.circular(20,),
-                  bottomLeft: Radius.circular(20,),
-                  bottomRight: Radius.circular(20,),
+            decoration: BoxDecoration(
+              color: Color(0xff0d6eb8),
+              borderRadius: BorderRadius.circular(22),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
                 ),
-                color: Color(0xff0d6eb8),
-              ),
+              ],
             ),
+          ),
+            Row(
+              children: [
+                Container(
+                  width: 100,
+                  height: 100,
+                  margin: EdgeInsets.fromLTRB(15, 0, 15, 15),
+                  decoration: BoxDecoration(
+                    color: Color(0xff0d6eb8),
+                    borderRadius: BorderRadius.circular(22),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
@@ -394,5 +405,22 @@ bottomRight: Radius.circular(20,),
 color: Color(0xff0d6eb8),
 ),
 ),
+),
+),*/
+
+/*Container(
+height: 160,
+margin: EdgeInsets.fromLTRB(15, 0, 15, 1),
+decoration: BoxDecoration(
+color: Color(0xff0d6eb8),
+borderRadius: BorderRadius.circular(22),
+boxShadow: [
+BoxShadow(
+color: Colors.grey.withOpacity(0.5),
+spreadRadius: 5,
+blurRadius: 7,
+offset: Offset(0, 3), // changes position of shadow
+),
+],
 ),
 ),*/
