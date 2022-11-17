@@ -46,11 +46,16 @@ class Route1 extends StatelessWidget {
         child: Column(
           children: [
             Row(
-              children: [Image.asset('assets/asmlogore.png', width: 75,)],
+              children: [
+                Container(
+                  padding: EdgeInsets.only(left:10),
+                  child: Image.asset('assets/asmlogore.png', width: 75,),
+                ),
+              ],
             ),
           Container(
           height: 160,
-          margin: EdgeInsets.fromLTRB(15, 60, 15, 15),
+          margin: EdgeInsets.fromLTRB(15, 0, 15, 15),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
               topRight: Radius.circular(20,),
@@ -87,7 +92,9 @@ class Route1 extends StatelessWidget {
             ),
             IconButton(
               icon: Icon(Icons.food_bank_rounded),
-              onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => Route2()),
+              onPressed: () {
+                Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Route2()),
               );
                 },
             ),
