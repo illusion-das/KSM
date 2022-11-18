@@ -58,6 +58,7 @@ class Route1 extends StatelessWidget {
               children: [
                 Container(
 <<<<<<< HEAD
+<<<<<<< HEAD
                   width: 75,
                   height: 70,
                   padding: EdgeInsets.only(left:10),
@@ -66,6 +67,10 @@ class Route1 extends StatelessWidget {
                   padding: EdgeInsets.only(left: 10),
                   child: Image.asset('assets/asmlogore.png', width: 75,),
 >>>>>>> baae437f56c049d43c12a71ca075f15b27753598
+=======
+                  padding: EdgeInsets.fromLTRB(5.5, 0, 0, 0),
+                  child: Image.asset('assets/asmlogore.png', height: 75,),
+>>>>>>> 59b5cad356bf5f225daca78756334b96e1f745e2
                 ),
               ],
             ),
@@ -79,9 +84,12 @@ class Route1 extends StatelessWidget {
               boxShadow: [
                 BoxShadow(
 <<<<<<< HEAD
+<<<<<<< HEAD
                   color: Colors.grey.withOpacity(0.5),
                   spreadRadius: 1,
 =======
+=======
+>>>>>>> 59b5cad356bf5f225daca78756334b96e1f745e2
                   color: Colors.grey.withOpacity(0.75),
                   spreadRadius: 2,
 >>>>>>> baae437f56c049d43c12a71ca075f15b27753598
