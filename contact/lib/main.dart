@@ -105,7 +105,7 @@ class Route1 extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.fromLTRB(0, 10, 0, 15),
+                        margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
                         child: Text(
                           '2400',
                           style: TextStyle(
@@ -116,7 +116,7 @@ class Route1 extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.fromLTRB(5, 3, 0, 0),
+                        margin: EdgeInsets.fromLTRB(5, 15, 0, 0),
                         child: Text(
                           '포인트',
                           style: TextStyle(
