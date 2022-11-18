@@ -48,8 +48,8 @@ class Route1 extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  padding: EdgeInsets.only(left: 10),
-                  child: Image.asset('assets/asmlogore.png', width: 75,),
+                  padding: EdgeInsets.fromLTRB(5.5, 0, 0, 0),
+                  child: Image.asset('assets/asmlogore.png', height: 75,),
                 ),
               ],
             ),
