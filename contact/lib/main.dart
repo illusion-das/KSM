@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 
-
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -46,9 +45,9 @@ class Route1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          toolbarHeight: 0,
-          backgroundColor: Color(0xffffffff),
-          shadowColor: Colors.transparent,
+        toolbarHeight: 0,
+        backgroundColor: Color(0xffffffff),
+        shadowColor: Colors.transparent,
       ),
       body: Center(
         child: Column(
@@ -59,27 +58,79 @@ class Route1 extends StatelessWidget {
                   width: 75,
                   height: 70,
                   padding: EdgeInsets.fromLTRB(5.5, 0, 0, 0),
-                  child: Image.asset('assets/asmlogore.png', height: 75,),
+                  child: Image.asset(
+                    'assets/asmlogore.png',
+                    height: 75,
+                  ),
                 ),
               ],
             ),
-          Container(
-          height: 140,
-            padding: EdgeInsets.only(top:10),
-          margin: EdgeInsets.fromLTRB(15, 0, 15, 15),
-            decoration: BoxDecoration(
-              color: Color(0xff0d6eb8),
-              borderRadius: BorderRadius.circular(22),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.75),
-                  spreadRadius: 2,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-              ],
+            Container(
+              width: 500,
+              height: 140,
+              padding: EdgeInsets.only(top: 10),
+              margin: EdgeInsets.fromLTRB(15, 0, 15, 15),
+              decoration: BoxDecoration(
+                color: Color(0xff0d6eb8),
+                borderRadius: BorderRadius.circular(22),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.75),
+                    spreadRadius: 2,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+              ),
+              child: Column(
+                children: [
+                  Container(
+                    margin: EdgeInsets.fromLTRB(0, 0, 310, 5),
+                    child: Text(
+                      '  자산',
+                      style: TextStyle(
+                          fontFamily: 'Pretendard',
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xffffffff)),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: 75,
+                        margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                        child: Image.asset(
+                          'assets/title.png',
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.fromLTRB(0, 10, 0, 15),
+                        child: Text(
+                          '2400',
+                          style: TextStyle(
+                              fontFamily: 'Pretendard',
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xffffffff)),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.fromLTRB(5, 3, 0, 0),
+                        child: Text(
+                          '포인트',
+                          style: TextStyle(
+                              fontFamily: 'Pretendard',
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xffffffff)),
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
-          ),
             Row(
               children: [
                 Container(
@@ -121,13 +172,15 @@ class Route1 extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  margin: EdgeInsets.fromLTRB(25, 5, 15, 15),
-                    child: Text('유용한 기능', style:TextStyle(
-                        fontFamily:'Pretendard',fontSize:30,
-                        fontWeight:FontWeight.bold,
-                        color: Color(0xff4c4c4d)),
-                    )
-                ),
+                    margin: EdgeInsets.fromLTRB(25, 5, 15, 15),
+                    child: Text(
+                      '유용한 기능',
+                      style: TextStyle(
+                          fontFamily: 'Pretendard',
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xff4c4c4d)),
+                    )),
               ],
             ),
             Column(
@@ -282,36 +335,34 @@ class Route1 extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            IconButton(
-              icon: Icon(Icons.home_rounded),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: Icon(Icons.food_bank_rounded),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: Icon(Icons.money_rounded),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: Icon(Icons.school_rounded),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: Icon(Icons.tag_faces_rounded),
-              onPressed: () {},
-            ),
-          ],
-        )
-      ),
+          child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          IconButton(
+            icon: Icon(Icons.home_rounded),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(Icons.food_bank_rounded),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(Icons.money_rounded),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(Icons.school_rounded),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(Icons.tag_faces_rounded),
+            onPressed: () {},
+          ),
+        ],
+      )),
     );
   }
 }
-
 
 /*ElevatedButton(
 child: Text('화면2 키기'),
@@ -333,7 +384,6 @@ topLeft: Radius.circular(20,),
 ),
 ),
 ),*/
-
 
 /*Container(
 width: double.infinity,
